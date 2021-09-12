@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pricing</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background: #F5F5F5;
+		}
+		section{
+			width: 1052px;
+			align-content: center;
+			margin: 37px auto 40px auto;
+			background: white;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+		}
+		.first-container{
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			text-align: center;
+
+		}
+		.first-container div:nth-child(1) h4{
+				display: none;
+			}
+		.first-container h4{
+			font-size: 18px;
+			font-weight: 700;
+			text-align: center;
+			color: black;
+			font-family: 'Montserrat', sans-serif;
+		}
+		.first-container p{
+			font-size: 36px;
+			text-align: center;
+			font-weight: 400;
+			color: #636363;
+			font-family: 'Montserrat', sans-serif;
+			margin-top: 30px;
+			margin-bottom:0px;
+		}
+		.first-container div:nth-child(2) a{
+			background: #7d6e99;
+			padding: 11px 50px 11px 50px;
+			display: inline-block;
+			border-radius: 5px;
+			font-size: 18px;
+			color: white;
+			text-decoration: none;
+			cursor: pointer;
+			font-weight: 700;
+			margin-top: 30px;
+			font-size:'Montserrat', sans-serif ;
+		}
+		.first-container div:nth-child(3) a{
+			background: #a7ca1a;
+			padding: 11px 50px 11px 50px;
+			display: inline-block;
+			border-radius: 5px;
+			font-size: 18px;
+			color: white;
+			text-decoration: none;
+			cursor: pointer;
+			font-weight: 700;
+			margin-top: 30px;
+			font-size:'Montserrat', sans-serif ;
+		}
+		.first-container div:nth-child(4) a{
+			background: #4c7da5;
+			padding: 11px 50px 11px 50px;
+			display: inline-block;
+			border-radius: 5px;
+			font-size: 18px;
+			color: white;
+			text-decoration: none;
+			cursor: pointer;
+			font-weight: 700;
+			margin-top: 30px;
+			font-size:'Montserrat', sans-serif ;
+		}
+		.first-container span{
+			font-size: 12px;
+			text-align: center;
+			color: #969696;;
+			font-family: 'Montserrat', sans-serif;
+			
+		}
+		.first-container div{
+			width: 261px;
+			height: 244px;
+			border: 1px solid #efefef;
+			padding: 35px 0 28px 0;
+			background: white;
+		}
+
+		.view{
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			background: #F5F5F5;
+			border-bottom:  1px solid #efefef;
+
+		}
+		.view ul li{
+			font-size: 14px;
+			font-family: 'Noto Sans', sans-serif;
+			font-weight: 700;
+			height: 44px;
+			width: 261px;
+			line-height: 50px;
+			border: none;
+		}
+		.accordion{
+			line-height: 50px;
+			font-size: 14px;
+			font-family: 'Noto Sans', sans-serif;
+			font-weight: 700;
+			border: none;
+			outline: none;
+			width: 261px;
+			background: #F5F5F5;
+			text-align: left;
+			padding-left:20px;
+			
+
+		}
+		.accordion::after{
+			content: "?";
+			color:#a7ca1a;
+			padding: 5px;
+			height: 5px;
+			width: 5px;
+			font-size:12px;
+			line-height:5px;
+			display: inline-block;
+			border: 1px solid #a7ca1a;
+			border-radius:50%;
+			cursor: pointer;
+		}
+		.panel{
+			display:grid;
+			grid-template-columns: auto auto auto auto;
+			display: none;
+		}
+		.panel ul li{
+			width: 261px;
+			height: 44px;
+			color: #777777;
+			font-size: 14px;
+			font-family: 'Noto Sans', sans-serif;
+			font-weight: 400;
+			line-height: 50px;
+			background: white;
+
+		}
+		ul li{
+			border: 1px solid #efefef;
+			list-style: none;
+			text-align: center;
+
+		}
+		.final-part{
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+		}
+		.final-part div:nth-child(2) a{
+			background: #7d6e99;
+			padding: 11px 50px 11px 50px;
+			display: inline-block;
+			border-radius: 5px;
+			font-size: 18px;
+			color: white;
+			text-decoration: none;
+			cursor: pointer;
+			font-weight: 700;
+			margin-top: 30px;
+			font-size:'Montserrat', sans-serif ;
+		}
+		.final-part div:nth-child(3) a{
+			background: #a7ca1a;
+			padding: 11px 50px 11px 50px;
+			display: inline-block;
+			border-radius: 5px;
+			font-size: 18px;
+			color: white;
+			text-decoration: none;
+			cursor: pointer;
+			font-weight: 700;
+			margin-top: 30px;
+			font-size:'Montserrat', sans-serif ;
+		}
+		.final-part div:nth-child(4) a{
+			background: #4c7da5;
+			padding: 11px 50px 11px 50px;
+			display: inline-block;
+			border-radius: 5px;
+			font-size: 18px;
+			color: white;
+			text-decoration: none;
+			cursor: pointer;
+			font-weight: 700;
+			margin-top: 30px;
+			font-size:'Montserrat', sans-serif ;
+		}
+		.final-part div{
+			width: 261px;
+			border: 1px solid #efefef;
+			padding: 35px 0 28px 0;
+			background: white;
+			text-align:  center;
+		}
+		.move{
+			transform: rotate(180deg);
+			transition: 1s;
+		}
+		.remove{
+			transform: rotate(0deg);
+		}
+		@media only screen and ( max-width: 767px){
+			section{
+				width: 100%;
+				overflow:auto;
+			}
+			.view ul{
+				background:#F5F5F5;
+			}
+			.panel{
+				width: 100%;
+			}
+
+			.first-container div:nth-child(1){
+				line-height: 250px;
+			}
+			.first-container div:nth-child(1) h4{
+				display: block;
+			}
+		}
+	</style>
+
+</head>
+<body>
+	<section>
+	<div class="first-container">
+		<div>
+			<h4> Plans</h4>
+		</div>
+		<div>
+			<h4>Basic</h4>
+			<p>$297</p>
+			<span>billed yearly</span><br>
+			<a href="#">Buy Basic</a>
+		</div>
+		<div>
+			<h4>Business</h4>
+			<p>$697</p>
+			<span>billed yearly</span><br>
+			<a href="#">Buy Business</a>
+		</div>
+		<div>
+			<h4>Pro</h4>
+			<p>$997</p>
+			<span>billed yearly</span><br>
+			<a href="#">Buy Pro</a>
+		</div>
+	</div>
+
+	<div class="view">
+		<button class="accordion" ><i class="fas fa-chevron-up"></i> General </button>
+		<ul>
+			<li>Yes</li>
+		</ul>
+		<ul>
+			<li>Yes</li>
+		</ul>
+		<ul>
+			<li>Yes</li>
+		</ul>
+		
+	</div>
+	
+	 <div class="panel" style="display: grid;">
+			<ul>
+				<li>Number of sites</li>
+			</ul>
+			<ul>
+				<li>1</li>
+			</ul>
+			<ul>
+				<li>1</li>
+			</ul>
+			<ul>
+				<li>1</li>
+			</ul>
+			<ul>
+				<li>Media manager</li>
+			</ul>
+			<ul>
+				<li style="color:  #a7ca1a;  font-size: 18px;">✔</li>
+			</ul>
+			<ul>
+				<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+			</ul>
+			<ul>
+				<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+			</ul>
+			<ul>
+				<li>3rd party integrations</li>
+			</ul>
+			<ul>
+				<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+			</ul>
+			<ul>
+				<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+			</ul>
+			<ul>
+				<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+			</ul>
+			<ul>
+				<li>Team members</li>
+			</ul>
+			<ul>
+				<li>0</li>
+			</ul>
+			<ul>
+				<li>0</li>
+			</ul>
+			<ul>
+				<li>0</li>
+			</ul>
+			<ul>
+				<li>'Powered by' logo</li>
+			</ul>
+			<ul>
+				<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+			</ul>
+			<ul>
+				<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+			</ul>
+			<ul>
+				<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+			</ul>
+		</div>
+		<div class="view">
+			<button class="accordion" ><i class="fas fa-chevron-down"></i> Funnel Builder </button>
+			<ul>
+				<li>Yes</li>
+			</ul>
+			<ul>
+				<li>Yes</li>
+			</ul>
+			<ul>
+				<li>Yes</li>
+			</ul>
+		</div>
+		 <div class="panel">
+				<ul>
+					<li>Number of funnels</li>
+				</ul>
+				<ul>
+					<li>10</li>
+				</ul>
+				<ul>
+					<li>100</li>
+				</ul>
+				<ul>
+					<li>500</li>
+				</ul>
+				<ul>
+					<li>Number of templanes groups</li>
+				</ul>
+				<ul>
+					<li>5</li>
+				</ul>
+				<ul>
+					<li>500</li>
+				</ul>
+				<ul>
+					<li>99999</li>
+				</ul>
+				<ul>
+					<li>Split testing</li>
+				</ul>
+				<ul>
+					<li style="color:  red; font-size: 18px;">❌</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+				<ul>
+					<li>Mobile optimizer</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+				<ul>
+					<li>In-built conversion tools</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+				<ul>
+					<li>HTML download</li>
+				</ul>
+				<ul>
+					<li style="color:  red; font-size: 18px;">❌</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+				<ul>
+					<li>Save as template</li>
+				</ul>
+				<ul>
+					<li style="color:  red; font-size: 18px;">❌</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+				<ul>
+					<li>Clone page</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+				<ul>
+					<li>Unique visitors</li>
+				</ul>
+				<ul>
+					<li>25,000</li>
+				</ul>
+				<ul>
+					<li>100,000</li>
+				</ul>
+				<ul>
+					<li>Unlimited</li>
+				</ul>
+				<ul>
+					<li>Transfer funnels</li>
+				</ul>
+				<ul>
+					<li style="color:  red; font-size: 18px;">❌</li>
+				</ul>
+				<ul>
+					<li style="color:  red; font-size: 18px;">❌</li>
+				</ul>
+				<ul>
+					<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+				</ul>
+			</div>
+			<div class="view">
+				<button class="accordion" ><i class="fas fa-chevron-down"></i> Product Builder </button>
+				<ul>
+					<li>Yes</li>
+				</ul>
+				<ul>
+					<li>Yes</li>
+				</ul>
+				<ul>
+					<li>Yes</li>
+				</ul>
+			</div>
+			<div class="panel">
+							<ul>
+								<li>Number of Products</li>
+							</ul>
+							<ul>
+								<li>10</li>
+							</ul>
+							<ul>
+								<li>50</li>
+							</ul>
+							<ul>
+								<li>250</li>
+							</ul>
+							<ul>
+								<li>Membership module products</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li>Digital products</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li>Instasuite Checkout (Stripe & Paypal)</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li>Multiple price points</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li>Coupons and Discounts</li>
+							</ul>
+							<ul>
+								<li style="color:  red; font-size: 18px;">❌</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li>Automation actions</li>
+							</ul>
+							<ul>
+								<li style="color:  red; font-size: 18px;">❌</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li>Digital product delivery - Email</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li>Digital product delivery - Redirect URL</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li>Digital product delivery - Upload File</li>
+							</ul>
+							<ul>
+								<li style="color:  red; font-size: 18px;">❌</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li>Digital product delivery - ISPDN</li>
+							</ul>
+							<ul>
+								<li style="color:  red; font-size: 18px;">❌</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li>Export orders to csv</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+							<ul>
+								<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+							</ul>
+						</div>
+						<div class="view">
+							<button class="accordion" ><i class="fas fa-chevron-down"></i> Membership Builder </button>
+							<ul>
+								<li>Yes</li>
+							</ul>
+							<ul>
+								<li>Yes</li>
+							</ul>
+							<ul>
+								<li>Yes</li>
+							</ul>
+						</div>
+						<div class="panel">
+										<ul>
+											<li>In-built SMTP</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Number of themes</li>
+										</ul>
+										<ul>
+											<li >1</li>
+										</ul>
+										<ul>
+											<li >3</li>
+										</ul>
+										<ul>
+											<li >5</li>
+										</ul>
+										<ul>
+											<li>Numbers of members</li>
+										</ul>
+										<ul>
+											<li>1,000</li>
+										</ul>
+										<ul>
+											<li>5,000</li>
+										</ul>
+										<ul>
+											<li>10,000</li>
+										</ul>
+										<ul>
+											<li>Member tags</li>
+										</ul>
+										<ul>
+											<li style="color:  red; font-size: 18px;">❌</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Drip-feed</li>
+										</ul>
+										<ul>
+											<li style="color:  red; font-size: 18px;">❌</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Member progress tracking</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Quiz tracking</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Design editor</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										
+									</div>
+									<div class="view">
+										<button class="accordion" ><i class="fas fa-chevron-down"></i> List Builder </button>
+										<ul>
+											<li>Yes</li>
+										</ul>
+										<ul>
+											<li>Yes</li>
+										</ul>
+										<ul>
+											<li>Yes</li>
+										</ul>
+									</div>
+									<div class="panel">
+										<ul>
+											<li>SMTP setup</li>
+										</ul>
+										<ul>
+											<li>Own</li>
+										</ul>
+										<ul>
+											<li>Own</li>
+										</ul>
+										<ul>
+											<li>Own</li>
+										</ul>
+										<ul>
+											<li>Blacklist domain, email, IP</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Block role-based email</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Number of lists </li>
+										</ul>
+										<ul>
+											<li >10</li>
+										</ul>
+										<ul>
+											<li >100</li>
+										</ul>
+										<ul>
+											<li >unlimited</li>
+										</ul>
+										<ul>
+											<li>Number of subscribers</li>
+										</ul>
+										<ul>
+											<li >1,000</li>
+										</ul>
+										<ul>
+											<li>5,000</li>
+										</ul>
+										<ul>
+											<li>10,000</li>
+										</ul>
+										<ul>
+											<li>Manual/Bulk Import</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>List segmentation</li>
+										</ul>
+										<ul>
+											<li style="color:  red; font-size: 18px;">❌</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Automations</li>
+										</ul>
+										<ul>
+											<li style="color:  red; font-size: 18px;">❌</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Optin forms</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Broadcast</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Sequences</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Save email templates</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+									</div>
+								<div class="view">
+										<button class="accordion" ><i class="fas fa-chevron-down"></i> Blog Builder </button>
+										<ul>
+											<li>Yes</li>
+										</ul>
+										<ul>
+											<li>Yes</li>
+										</ul>
+										<ul>
+											<li>Yes</li>
+										</ul>
+									</div>
+									<div class="panel">
+										<ul>
+											<li>Widgets</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Menu</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Theme customization</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Number of themes </li>
+										</ul>
+										<ul>
+											<li >1</li>
+										</ul>
+										<ul>
+											<li >3</li>
+										</ul>
+										<ul>
+											<li >3</li>
+										</ul>
+										<ul>
+											<li>Number of posts</li>
+										</ul>
+										<ul>
+											<li >Unlimited</li>
+										</ul>
+										<ul>
+											<li>Unlimited</li>
+										</ul>
+										<ul>
+											<li>Unlimited</li>
+										</ul>
+										<ul>
+											<li>Post categories</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+									</div>
+									<div class="view">
+										<button class="accordion" ><i class="fas fa-chevron-down"></i> Affiliate Center </button>
+										<ul>
+											<li>No</li>
+										</ul>
+										<ul>
+											<li>Yes</li>
+										</ul>
+										<ul>
+											<li>Yes</li>
+										</ul>
+									</div>
+									<div class="panel">
+										<ul>
+											<li>In-built SMTP</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;"></li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Promotion Tools</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;"></li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Manage Commissions</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;"></li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Number of affiliates</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;"></li>
+										</ul>
+										<ul>
+											<li >1000</li>
+										</ul>
+										<ul>
+											<li >5000</li>
+										</ul>
+										<ul>
+											<li>Number of themes</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;"></li>
+										</ul>
+										<ul>
+											<li >1</li>
+										</ul>
+										<ul>
+											<li >1</li>
+										</ul>
+										<ul>
+											<li>Theme customization</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;"></li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+									</div>
+									<div class="view">
+										<button class="accordion" ><i class="fas fa-chevron-down"></i> Support Desk </button>
+										<ul>
+											<li>No</li>
+										</ul>
+										<ul>
+											<li>Yes</li>
+										</ul>
+										<ul>
+											<li>Yes</li>
+										</ul>
+									</div>
+									<div class="panel">
+										<ul>
+											<li>Number of staff</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;"></li>
+										</ul>
+										<ul>
+											<li>3</li>
+										</ul>
+										<ul>
+											<li>10</li>
+										</ul>
+										<ul>
+											<li>in-built SMTP</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;"></li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Number of canned responses</li>
+										</ul>
+										<ul>
+											<li></li>
+										</ul>
+										<ul>
+											<li>20</li>
+										</ul>
+										<ul>
+											<li>100</li>
+										</ul>
+										<ul>
+											<li>Knowledgebase</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;"></li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li style="color:  #a7ca1a; font-size: 18px;">✔</li>
+										</ul>
+										<ul>
+											<li>Number of themes</li>
+										</ul>
+										<ul>
+											<li></li>
+										</ul>
+										<ul>
+											<li>1</li>
+										</ul>
+										<ul>
+											<li>1</li>
+										</ul>
+									</div>	
+									<div class="final-part">
+										<div>
+											
+										</div>
+										<div>
+											<a href="#">Buy Basic</a>
+										</div>
+										<div>
+											<a href="#">Buy Business</a>
+										</div>
+										<div>
+											<a href="#">Buy Pro</a>
+										</div>
+
+									</div>
+
+	</section>
+	<script src="https://kit.fontawesome.com/532a64caf8.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<script>
+		$(document).ready(function(){
+		$('.accordion ').on('click', function(e){
+		  e.preventDefault();
+		   $('.fa-chevron-down').toggleClass('move');
+		  $('.panel').slideUp();
+		  $(this).parent().next().css("display","grid").slideDown();	  		   
+		})
+	});
+	</script>
+</body>
+</html>
