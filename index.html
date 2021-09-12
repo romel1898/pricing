@@ -144,9 +144,11 @@
 			cursor: pointer;
 		}
 		.panel{
-			display:grid;
 			grid-template-columns: auto auto auto auto;
-			display: none;
+			overflow: hidden;
+			display: grid;
+			height: 0;
+			transition: 1s;
 		}
 		.panel ul li{
 			width: 261px;
@@ -215,13 +217,10 @@
 			background: white;
 			text-align:  center;
 		}
-		.move{
-			transform: rotate(180deg);
+			.fa-chevron-down{
 			transition: 1s;
 		}
-		.remove{
-			transform: rotate(0deg);
-		}
+
 		@media only screen and ( max-width: 767px){
 			section{
 				width: 100%;
@@ -269,9 +268,8 @@
 			<a href="#">Buy Pro</a>
 		</div>
 	</div>
-
 	<div class="view">
-		<button class="accordion" ><i class="fas fa-chevron-up"></i> General </button>
+		<button class="accordion" ><i class="fas fa-chevron-down"></i> General </button>
 		<ul>
 			<li>Yes</li>
 		</ul>
@@ -283,8 +281,7 @@
 		</ul>
 		
 	</div>
-	
-	 <div class="panel" style="display: grid;">
+	 <div class="panel" >
 			<ul>
 				<li>Number of sites</li>
 			</ul>
@@ -492,7 +489,7 @@
 					<li>Yes</li>
 				</ul>
 			</div>
-			<div class="panel">
+			<div class="panel" >
 							<ul>
 								<li>Number of Products</li>
 							</ul>
@@ -1173,14 +1170,43 @@
 	<script src="https://kit.fontawesome.com/532a64caf8.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 	<script>
-		$(document).ready(function(){
-		$('.accordion ').on('click', function(e){
-		  e.preventDefault();
-		   $('.fa-chevron-down').toggleClass('move');
-		  $('.panel').slideUp();
-		  $(this).parent().next().css("display","grid").slideDown();	  		   
-		})
-	});
+	// 	$(document).ready(function(){
+	// 	$('.accordion ').on('click', function(e){
+	// 	  e.preventDefault();
+	// 	   $('.fa-chevron-down').toggleClass('move');
+	// 	  $('.panel').slideUp();
+	// 	  $(this).parent().next().css("display","grid").slideDown();	  		   
+	// 	})
+	// });
+		
+
+// Target elements 
+const accordions = document.querySelectorAll('.view');
+const contents = document.querySelectorAll('.panel');
+const arrows = document.querySelectorAll('.fa-chevron-down');
+
+// Show clicked content and hide others
+const active = (item, index) => {
+    contents.forEach((content, i) => {
+        if (i !== index) {
+            content.style.height =0 ;
+        }
+    })
+    item.style.height = `${item.scrollHeight}px`;
+  //Spin arrows
+    arrows.forEach((arrow, i) => {
+        arrow.style.transform = 'rotate(0deg)';
+        if (i !== index) {
+            arrow.style.transform = 'rotate(180deg)';
+        }
+        
+    })
+}
+// Add function to all accordion element buttons
+     accordions.forEach(
+    (accordion, i) => {
+        accordion.addEventListener("click", () => active(contents[i], i))
+    });
 	</script>
 </body>
 </html>
