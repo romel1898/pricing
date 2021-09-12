@@ -145,9 +145,10 @@
 		}
 		.panel{
 			grid-template-columns: auto auto auto auto;
-			overflow: hidden;
 			display: grid;
 			height: 0;
+			position: relative;
+			overflow: hidden;
 			transition: 1s;
 		}
 		.panel ul li{
@@ -226,11 +227,14 @@
 				width: 100%;
 				overflow:auto;
 			}
+			.view{
+				width: 100%;
+			}
 			.view ul{
 				background:#F5F5F5;
 			}
 			.panel{
-				width: 100%;
+				width: 1044px;
 			}
 
 			.first-container div:nth-child(1){
